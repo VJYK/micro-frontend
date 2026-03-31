@@ -32,7 +32,7 @@ module.exports = {
       filename: "remoteEntry.js",
 
       exposes: {
-        './AppModule': './projects/products/src/app/app.module.ts'
+        './ProductModule': './projects/products/src/app/product.module.ts'
       },
 
       shared: share({

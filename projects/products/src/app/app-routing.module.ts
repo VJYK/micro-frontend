@@ -5,7 +5,7 @@ import { ProductComponent } from './product/product.component';
 const routes: Routes = [{ path: '', component: ProductComponent }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -7,18 +7,18 @@ const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:4202/remoteEntry.js',
-        exposedModule: './ProductsModule',
-      }).then(m => m.ProductsModule),
+        remoteEntry: 'http://localhost:4201/remoteEntry.js',
+        exposedModule: './ProductModule',
+      }).then(m => m.ProductModule),
 
   }, {
     path: 'carts',
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        exposedModule: './CartsModule',
-      }).then(m => m.CartsModule),
+        remoteEntry: 'http://localhost:4202/remoteEntry.js',
+        exposedModule: './CartModule',
+      }).then(m => m.CartModule),
 
   }, {
     path: '',

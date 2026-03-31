@@ -32,7 +32,7 @@ module.exports = {
          name: "carts",
          filename: "remoteEntry.js",
         exposes: {
-            './Component': './projects/carts/src/app/app.component.ts',
+            './CartModule': './projects/carts/src/app/cart.module.ts',
         },        
         
         // For hosts (please adjust)
