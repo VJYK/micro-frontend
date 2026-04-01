@@ -1,6 +1,8 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
 const routes: Routes = [
   {
     path: 'products',
@@ -27,7 +29,7 @@ const routes: Routes = [
   }
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),StoreModule.forRoot({}),EffectsModule.forRoot([])],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
